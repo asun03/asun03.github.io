@@ -5339,7 +5339,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade .modal-dialog {
+/* .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
   -o-transform: translate(0, -25%);
@@ -5348,6 +5348,17 @@ button.close {
   -moz-transition: -moz-transform 0.3s ease-out;
   -o-transition: -o-transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
+} */
+/* Disable transition for modal dialog */
+.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
@@ -5377,6 +5388,7 @@ button.close {
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   background-clip: padding-box;
   outline: 0;
+  height: 90vh; /*fill up screen*/
 }
 
 .modal-backdrop {
@@ -5404,16 +5416,20 @@ button.close {
 }
 
 .modal-header .close {
-  margin-top: -2px;
+  margin: 0;
+  font-size: 36px; 
 }
 
 .modal-title {
   margin: 0;
   line-height: 1.42857;
+  font-weight: bold;
+  font-size: 24px; 
 }
 
 .modal-body {
   position: relative;
+  max-height: 500px !important;
   padding: 15px;
 }
 
@@ -5450,7 +5466,7 @@ button.close {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    max-width: 960px;
     margin: 30px auto;
   }
 
