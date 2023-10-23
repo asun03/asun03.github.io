@@ -116,10 +116,24 @@
 					<div class="row">
 						<div class="col-md-12">
 				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+							<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-1">
+					                  <i class="icon-pen2"></i>
+					               </div>
+
+					               <div class="timeline-label">
+					                  <h2><a href="#">Software Engineering Intern | Develop For Good </a> <span>2023-Present</span></h2>
+					                  <p>Collaborated with the nonprofit National Police data Coalition to develop a web page using Flask and React allowing journalists and attorneys working in the police accountability space to share their data in a secure data environment.</p>
+									 
+					               </div>
+					            </div>
+					         </article>
+
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
 
-					               <div class="timeline-icon color-1">
+					               <div class="timeline-icon color-2">
 					                  <i class="icon-pen2"></i>
 					               </div>
 
@@ -131,9 +145,9 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
+					               <div class="timeline-icon color-3">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
@@ -143,9 +157,9 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
+					               <div class="timeline-icon color-4">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
@@ -156,9 +170,9 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
+					               <div class="timeline-icon color-5">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
@@ -168,7 +182,7 @@
 					            </div>
 					         </article>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInRight">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-none">
 					               </div>
@@ -477,6 +491,9 @@
 			<div class="modal-body">
 				<p>This is the first ever video game I made: a classic single-player version of Atari's Pong (1972). Please use your up and down arrow keys to move the paddle :D </p>
 				<p>Technologies: made with SDL2/C++ and converted into WebAssembly with Emscripten!</p>
+				<li>Utilized game loop architecture that handled input processing, game state updates, and output generation.</li>
+				<li>Employed physics principles to code the ball's motion and manage collision detection.</li>
+				<li>Crafted conditional algorithms, enabling collision detection, ball movement, and responsive paddle behavior.</li>
 				<p><a href="games/pong.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
@@ -492,6 +509,9 @@
 			<div class="modal-body">
 				<p>Another classic Atari game from 1979! Move the ship using the arrow keys and fire lasers at asteroid using the spacebar. </p>
 				<p>Technologies: made with SDL2/C++ and ported over with Emscripten!</p>
+				<li>Utilized vectors for precise laser targeting and directional alignment.</li>
+				<li>Integrated Euler method to dynamically and precisely update the ship's position</li>
+				<li>Used randomization techniques and screen-wrapping mechanics for asteroid movement</li>
 				<p><a href="games/asteroids.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
@@ -507,6 +527,8 @@
 			<div class="modal-body">
 				<p>A simplified version of Konami's Frogger (1981). Use the arrow keys to try to cross the road. </p>
 				<p>Technologies: made with SDL2/C++ and ported over with Emscripten!</p>
+				<li>Utilized leading edge logic to prevent spam jumping. </li>
+				<li>Used dot product analysis to detect presence of frogs in front of vehicles, triggering automatic slowing mechanism if necessary.</li>
 				<p><a href="games/frogger.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
@@ -522,7 +544,11 @@
 			<div class="modal-body">
 				<p>The first level of Super Mario Bros (1985). Use the arrow keys to move and the space bar to jump (and turn up the volume!).</p>
 				<p>Technologies: made with SDL2/C++ and ported over with Emscripten!</p>
-				<p><a href="games/frogger.html">Click here to play me on desktop!</a></p>
+				<li> Implemented scroll camera that centered player and controlled camera movement while handling restrictions on camera movement and player boundaries.</li>
+				<li> Utilized acceleration and velocity for gravity simulation and jump mechanics </li>
+				<li> Enemy AI (Goomba) has spawner actors to manage dynamic enemy spawning and has distance-based spawning logic</li>
+				
+				<p><a href="games/mario.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
 		</div>
@@ -537,6 +563,7 @@
 			<div class="modal-body">
 				<p>Use the arrow keys to get chased by AI ghosts in this remake of Pac-Man (1980). </p>
 				<p>Technologies: made with SDL2/C++ and ported over with Emscripten!</p>
+				<li> Used basic AI and pathfinding logic along with time-based state changes for the ghosts</li>
 				<p><a href="games/pacman.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
@@ -552,7 +579,10 @@
 			<div class="modal-body">
 				<p>A remake of a level in Nintendo's The Legend of Zelda: A Link to the Past (1991). Move with the arrow keys and attack patrolling AI soldiers (and bushes) using the space bar. </p>
 				<p>Technologies: made with SDL2/C++ and ported over with Emscripten!</p>
-				<p><a href="games/pacman.html">Click here to play me on desktop!</a></p>
+				<li>Used tile mapping technique to load tile mapping background</li>
+				<li>Implemented enemy behavior with A* pathfinding</li>
+				<li>Utilized callbacks with functions and lambda for custom behavior on damage and death events</li>
+				<p><a href="games/zelda.html">Click here to play me on desktop!</a></p>
 			</div>
 		  </div>
 		</div>
